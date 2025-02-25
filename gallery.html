@@ -8,58 +8,113 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>الصفحة للصور والميديا</title>
 </head>
-<div>
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  
 <body dir="rtl">
-    <div class="container mt-5">
-        <h2>معرض الصور والميديا</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img src="path/to/image1.jpg" class="card-img-top" alt="صورة 1">
-              <div class="card-body">
-                <p class="card-text">وصف الصورة 1</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img src="path/to/image2.jpg" class="card-img-top" alt="صورة 2">
-              <div class="card-body">
-                <p class="card-text">وصف الصورة 2</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <video class="card-img-top" controls>
-                <source src="path/to/video1.mp4" type="video/mp4">
-                متصفحك لا يدعم تشغيل الفيديو.
-              </video>
-              <div class="card-body">
-                <p class="card-text">وصف الفيديو 1</p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- فيديو الشرح عن الهدف المستدام للمبادرات-->
+  <div>
+    <div class="card mb-4">
+      <video class="card-img-top" controls>
+        <source src="C:\Users\Barefee\Desktop\BootstrapProject\PIC\Sustainable Goal 15.mp4" type="video/mp4">
+        متصفحك لا يدعم تشغيل الفيديو.
+      </video>
+      <div class="card-body">
+        <p class="card-text">الهدف الخامس عشر من أهداف التنمية المستدامة، والذي يركز على حماية النظم الإيكولوجية البرية ومكافحة التصحر ووقف تدهور الأراضي وفقدان التنوع البيولوجي. الفيديو يسلط الضوء على أهمية الحفاظ على التنوع البيولوجي والأنظمة البيئية البرية لتحقيق التنمية المستدامة وضمان استدامة الموارد الطبيعية للأجيال القادمة.</p>
       </div>
-      
+    </div>
+  </div>
+  <!-- صور المبادرات--> 
+ <div class="card-group">
+    <!--1 صور المبادرات--> 
+    <div class="card" style="width: 18rem;">
+      <img src="C:\Users\Barefee\Desktop\BootstrapProject\PIC\05b9b099-df9e-464e-b89d-55f2e71309e1.jpg" class="card-img-top" alt="مبادرة لنشجرها">
+      <div class="card-body">
+        <h5 class="card-title">مبادرة لنشجرها</h5>
+        <p class="card-text">هي إحدى المبادرات البيئية التي أطلقتها المملكة العربية السعودية بهدف زراعة الأشجار والنباتات لتحسين البيئة وزيادة الرقعة الخضراء. تعمل المبادرة على تعزيز الوعي بأهمية التشجير والمحافظة على الغطاء النباتي، وتحفيز المجتمع للمشاركة الفعالة في التشجير من خلال فعاليات وحملات توعوية تتضمن زراعة الأشجار في الأماكن العامة والخاصة. كما تهدف إلى مكافحة التصحر وتقليل الآثار السلبية للتغير المناخي.</p>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          للمزيد عن المبادرة
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">مبادرة لنشجرها</h1>
+              </div>
+              <div class="modal-body">
+                هي جزء من مبادرة السعودية الخضراء التي أطلقها صاحب السمو الملكي ولي العهد الأمير محمد بن سلمان في 27 مارس 2021. تهدف المبادرة إلى زراعة 10 مليارات شجرة في جميع أنحاء المملكة خلال العقود القادمة، مما يساهم في تحويل الصحاري القاحلة إلى مساحات خضراء شاسعة2. كما تسعى إلى إعادة تأهيل 40 مليون هكتار من الأراضي المتدهورة، وتقليل الانبعاثات الكربونية، وتعزيز التنوع البيئي2. المبادرة مستمرة حتى تحقيق أهدافها بحلول عام 2030 وما بعده.
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">إغلاق</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <!--2 صور المبادرات--> 
+    <div class="card" style="width: 18rem;">
+      <img src="C:\Users\Barefee\Desktop\BootstrapProject\PIC\عطاء وطن.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">مبادرة عطاء وطن</h5>
+        <p class="card-text">هي مبادرة إنسانية واجتماعية تهدف إلى تقديم الدعم والمساعدة للفئات المحتاجة في المملكة العربية السعودية. تشمل المبادرة مجموعة من الأنشطة والبرامج التي تهدف إلى تحسين مستوى معيشة الأفراد والأسر المحتاجة من خلال تقديم الدعم المالي والعيني، وتوفير فرص التدريب والتأهيل المهني، ودعم المشاريع الصغيرة. كما تسعى المبادرة إلى تعزيز قيم التضامن والتكافل الاجتماعي بين أفراد المجتمع.</p>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          للمزيد عن المبادرة
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">مبادرة لنشجرها</h1>
+              </div>
+              <div class="modal-body">
+                هي مبادرة أطلقتها وزارة الموارد البشرية والتنمية الاجتماعية في المملكة العربية السعودية. بدأت المبادرة في 5 ديسمبر 2020، وتستمر حتى الآن. تهدف المبادرة إلى تعزيز العمل التطوعي في المملكة وتحقيق أهداف رؤية المملكة 2030 من خلال الوصول إلى مليون متطوع4. تشمل المبادرة تنظيم فعاليات وبرامج تطوعية في مختلف مناطق المملكة بالتعاون مع الجهات الحكومية والقطاع غير الربحي4.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">إغلاق</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+      </div>
+    </div>
+    <!--3 صور المبادرات--> 
+    <div class="card" style="width: 18rem;">
+      <img src="C:\Users\Barefee\Desktop\BootstrapProject\PIC\R.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">مبادرة أرضي خضراء</h5>
+        <p class="card-text">
+          تهدف إلى تعزيز الوعي البيئي وزيادة المساحات الخضراء من خلال تشجيع الأفراد والعائلات على زراعة الأشجار والنباتات في منازلهم وحدائقهم. المبادرة يمكن أن تشمل توفير ورش عمل للتوعية بأهمية التشجير وأساليب العناية بالنباتات، وتوزيع شتلات مجانية للمشاركين، وتنظيم مسابقات لأجمل حدائق منزلية.
+        </p>
+
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          للمزيد عن المبادرة
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">مبادرة لنشجرها</h1>
+              </div>
+              <div class="modal-body">
+              >أهداف المبادرة:
+                زيادة المساحات الخضراء في الأحياء السكنية.
+                
+                تعزيز الوعي البيئي بين أفراد المجتمع.
+                
+                تحسين جودة الهواء وتقليل الانبعاثات الكربونية.
+                
+                تعزيز الروابط الاجتماعية من خلال فعاليات مشتركة.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">إغلاق</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

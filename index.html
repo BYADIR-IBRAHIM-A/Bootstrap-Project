@@ -9,84 +9,178 @@
     <title>الصفحة الرئيسية</title>
 </head>
 <body dir="rtl">
-  </div> 
-  <nav class="navbar" style="background-color: #4fc48a;">
+  <nav class="navbar" style="background-color: #38aa2b;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">الصفحة الرئيسية</a>
+      <a class="navbar-brand">
+        <img src="C:\Users\Barefee\Desktop\BootstrapProject\PIC\image_jpeg.jpg" alt="شعار شركتنا" width="40" height="50">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">الصفحة الرئيسية</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="C:\Users\Barefee\Desktop\BootstrapProject\tasks.html">الجدول الدوري للمهام</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="C:\Users\Barefee\Desktop\BootstrapProject\gallery.html">معرض الصور والميديا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="C:\Users\Barefee\Desktop\BootstrapProject\contact.html">معلومات الاتصال</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              التقارير
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="C:\Users\Barefee\Desktop\BootstrapProject\reports.html">التقارير الشهرية</a></li>
+              <li><a class="dropdown-item" href="C:\Users\Barefee\Desktop\BootstrapProject\updates.html">التحديثات</a></li>
             </ul>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">ابحث</button>
-        </form>
       </div>
     </div>
   </nav>
- <nav>
-  <h3>
-    مرحبًا بكم في الموقع الداخلي لشركتنا! نحن سعداء بوجودكم معنا ونتطلع إلى تقديم أفضل تجربة ممكنة لكم.
-    يهدف هذا الموقع إلى تسهيل التواصل والتعاون بين جميع الموظفين.  
-  </h3>  
- </nav>
- 
- <div class="alert alert-success" role="alert">
-  مرحبًا بكم في موقعنا!
-</div>  
-<div class="container mt-5">
-  <h2 mt-5>بيانات الموظفين</h2>
-  <table class="table table-success table-hover">
-      <thead >
-          <tr>
-              <th scope="col">رقم الموظف</th>
-              <th scope="col">اسم الموظف</th>
-              <th scope="col">العمر</th>
-              <th scope="col">الوظيفة</th>
-              <th scope="col">سنوات الخبرة</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td rowspan="2">1</td>
-              <td rowspan="2">أحمد</td>
-              <td rowspan="2">44</td>
-              <td >مهندس</td>
-              <td>9 سنوات</td>
-          </tr>
-          <tr>
-              
-              <td>مدير</td>
-              <td>3 سنوات</td>
-          </tr>
-          <tr>
-              <td>2</td>
-              <td>سارة</td>
-              <td>28</td>
-              <td>مصممة</td>
-              <td>3 سنوات</td>
-          </tr>
-      </tbody>
-  </table>
-</div>                
+  <!-- صورة العرض-->
+  <div class="row g-0 bg-body-secondary position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="C:\Users\Barefee\Desktop\BootstrapProject\PIC\d979c82d-fa6f-44a8-80cb-001967feca39.jpg" 
+      class="w-100" alt="مبنى شركتنا">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h1 class="mt-4">مرحباً بكم</h1>
+      <h2>"يشرفنا استقبالكم في شركة البيادر، الشركة الرائدة في مجال الاستدامة. نفتخر بإنجازاتنا في تحقيق أهداف رؤية 2030، ونسعى للمزيد من النجاحات في المستقبل."
+      </h2>
+      </div>
+  </div>
+
+<!-- الإشعار الأخضر -->
+<div class="alert alert-success" role="alert">
+  مرحبًا بكم في موقع شركتنا
+  </div>  
+  
+<!-- cards -->
+<div class="card-group">
+  <div class="card border-success">
+    <img src="C:\Users\Barefee\Desktop\BootstrapProject\PIC\4fc7ba45-202e-439d-84ae-690276711e6d.jpg" class="card-img-top" alt="صورة الهدف ال15 من الأهداف المستدامه">
+    <div class="card-body">
+      <h5 class="card-header border-success">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card border-success">
+    <img src="C:\Users\Barefee\Desktop\BootstrapProject\PIC\0a4eb632-9910-4f5d-a4d0-4956633be237.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-header border-success">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+  </div>
+  <div class="card border-success">
+    <img src="C:\Users\Barefee\Desktop\BootstrapProject\PIC\ef169898-c404-4b0e-846a-0106b2b8c79d.jpg" class="card-img-top" alt="مبادرة السعودية الخضراء">
+    <div class="card-body">
+      <h5 class="card-header border-success">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal زر  -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  بيانات الموظفين
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+      </div>
+      <div class="modal-body">
+        <table class="table table-success table-hover">
+          <thead >
+              <tr>
+                  <th scope="col">رقم الموظف</th>
+                  <th scope="col">اسم الموظف</th>
+                  <th scope="col">العمر</th>
+                  <th scope="col">الوظيفة</th>
+                  <th scope="col">سنوات الخبرة</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td rowspan="2">1</td>
+                  <td rowspan="2">أحمد</td>
+                  <td rowspan="2">44</td>
+                  <td >مهندس</td>
+                  <td>9 سنوات</td>
+              </tr>
+              <tr>
+                  
+                  <td>مدير</td>
+                  <td>3 سنوات</td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>سارة</td>
+                  <td>28</td>
+                  <td>مصممة</td>
+                  <td>3 سنوات</td>
+              </tr>
+          </tbody>
+      </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--نهاية الصفحة-->
+<footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+  <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
+          <img src="C:\Users\Barefee\Desktop\BootstrapProject\PIC\image_jpeg.jpg" alt="شعار شركتنا" width="40" height="50">
+          <span class="fs-5">ALBYADIR</span>
+        </a>
+        <ul class="list-unstyled small">
+          <li class="mb-2">معاً نحو مستقبل أخضر مع البيادر.</li>
+          <li class="mb-2">"أهلاً بكم في شركة البيادر، شركاء في التنمية المستدامة."</li>
+          <li class="mb-2 small">© 2023 شركة البيادر | البيادر: شركاء في التنمية المستدامة.</li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>معلومات الإتصال بنا</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/BYADIR-IBRAHIM-A">منصتنا على github</a></li>
+          <li class="mb-2">Users@gmail.com</li>
+          <li class="mb-2">+96658292704</li>
+          <li class="mb-2"><a href="C:\Users\Barefee\Desktop\BootstrapProject\contact.html" target="_blank" rel="noopener">للتواصل مع الدعم الفني</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>للشكاوى والإستفسارات</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="C:\Users\Barefee\Desktop\BootstrapProject\reports.html">أَضغط هنا للإنتقال</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>مواقعنا بالتواصل الإجتماعي</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://www.youtube.com/@abdelraoufelmanama7966">منصتنا على اليوتيوب</a></li>
+          <li class="mb-2"><a href="/docs/5.3/">منصتنا على إكس</a></li>
+          <li class="mb-2"><a href="/docs/5.3/examples/">منصتنا على سناب شات</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

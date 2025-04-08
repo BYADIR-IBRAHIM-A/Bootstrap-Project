@@ -6,7 +6,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <!-- feedback-js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@betahuhn/feedback-js/dist/feedback-js.min.js" 
+            data-feedback-opts='{ "endpoint": "https://api.mxis.ch/form/feedback", "id": "codepen", "emailField": true, "title": "Feedback Example", "forceShowButton": true }'>
+    </script>
     <title>الصفحة الرئيسية</title>
 </head>
 <body dir="rtl">
@@ -89,152 +98,225 @@
   </div>
 </div>
 
-<!-- Modal زر  -->
-<button type="button" class="btn btn-success" onclick="window.location.href='employees.html'">
+<!-- زر لفتح الـ Modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
   بيانات الموظفين
 </button>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-xl"> <!-- تكبير الـ Modal -->
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header bg-success text-white">
         <h5 class="modal-title" id="exampleModalLabel">بيانات الموظفين</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <table class="table table-success table-hover">
-          <thead >
+        <!-- جعل الجدول قابلاً للتمرير -->
+        <div class="table-responsive">
+          <table id="employeeTable" class="table table-striped table-hover table-success">
+            <thead class="table-dark">
               <tr>
-                  <th scope="col">رقم الموظف</th>
-                  <th scope="col">اسم الموظف</th>
-                  <th scope="col">العمر</th>
-                  <th scope="col">الوظيفة</th>
-                  <th scope="col">سنوات الخبرة</th>
+                <th>رقم الموظف</th>
+                <th>اسم الموظف</th>
+                <th>القسم</th>
+                <th>الوظيفة</th>
+                <th>الراتب</th>
               </tr>
-          </thead>
-          <tbody>
-        <tr>
-        <td rowspan="2">1</td>
-        <td rowspan="2">أحمد</td>
-        <td rowspan="2">44</td>
-        <td>مهندس</td>
-        <td>9 سنوات</td>
-    </tr>
-    <tr>
-        <td>مدير</td>
-        <td>3 سنوات</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>سارة</td>
-        <td>28</td>
-        <td>مصممة</td>
-        <td>3 سنوات</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>محمد</td>
-        <td>35</td>
-        <td>مبرمج</td>
-        <td>7 سنوات</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>ليلى</td>
-        <td>30</td>
-        <td>محللة بيانات</td>
-        <td>5 سنوات</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>خالد</td>
-        <td>40</td>
-        <td>مدير مشاريع</td>
-        <td>10 سنوات</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>نور</td>
-        <td>27</td>
-        <td>مصممة جرافيك</td>
-        <td>4 سنوات</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>علي</td>
-        <td>32</td>
-        <td>مهندس برمجيات</td>
-        <td>6 سنوات</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>هدى</td>
-        <td>29</td>
-        <td>محللة نظم</td>
-        <td>5 سنوات</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>ياسر</td>
-        <td>38</td>
-        <td>مدير تسويق</td>
-        <td>8 سنوات</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>منى</td>
-        <td>26</td>
-        <td>كاتبة محتوى</td>
-        <td>2 سنوات</td>
-    </tr>
-    <tr>
-        <td rowspan="2">11</td>
-        <td rowspan="2">فهد</td>
-        <td rowspan="2">45</td>
-        <td>مدير مالي</td>
-        <td>15 سنة</td>
-    </tr>
-    <tr>
-        <td>محاسب</td>
-        <td>10 سنوات</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>ريم</td>
-        <td>31</td>
-        <td>مصممة داخلية</td>
-        <td>6 سنوات</td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td>سامي</td>
-        <td>36</td>
-        <td>مهندس معماري</td>
-        <td>9 سنوات</td>
-    </tr>
-    <tr>
-        <td>14</td>
-        <td>نورة</td>
-        <td>33</td>
-        <td>مديرة موارد بشرية</td>
-        <td>7 سنوات</td>
-    </tr>
-    <tr>
-        <td>15</td>
-        <td>ماجد</td>
-        <td>39</td>
-        <td>مدير عمليات</td>
-        <td>12 سنة</td>
-    </tr>
-</tbody>
-      </table>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>أحمد</td>
+                <td>الهندسة</td>
+                <td>مهندس برمجيات</td>
+                <td>$5000</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>سارة</td>
+                <td>التصميم</td>
+                <td>مصممة جرافيك</td>
+                <td>$4000</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>محمد</td>
+                <td>المبيعات</td>
+                <td>مدير مبيعات</td>
+                <td>$6000</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>طارق</td>
+                <td>التسويق</td>
+                <td>مدير تسويق رقمي</td>
+                <td>$7100</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>ليلى</td>
+                <td>الموارد البشرية</td>
+                <td>مديرة موارد بشرية</td>
+                <td>$5500</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>خالد</td>
+                <td>التسويق</td>
+                <td>مدير تسويق</td>
+                <td>$7000</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>نور</td>
+                <td>التصميم</td>
+                <td>مصممة جرافيك</td>
+                <td>$4500</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>علي</td>
+                <td>الهندسة</td>
+                <td>مهندس ميكانيكي</td>
+                <td>$6000</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>هدى</td>
+                <td>المبيعات</td>
+                <td>مندوبة مبيعات</td>
+                <td>$3500</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>ياسر</td>
+                <td>الإدارة</td>
+                <td>مدير إداري</td>
+                <td>$8000</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>منى</td>
+                <td>التطوير</td>
+                <td>مطورة ويب</td>
+                <td>$5000</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>فهد</td>
+                <td>المالية</td>
+                <td>محاسب</td>
+                <td>$4000</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>ريم</td>
+                <td>التصميم</td>
+                <td>مصممة داخلية</td>
+                <td>$4800</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>سامي</td>
+                <td>الهندسة</td>
+                <td>مهندس معماري</td>
+                <td>$6500</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>نورة</td>
+                <td>الموارد البشرية</td>
+                <td>مسؤولة توظيف</td>
+                <td>$4200</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>ماجد</td>
+                <td>التسويق</td>
+                <td>أخصائي تسويق</td>
+                <td>$4700</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>عبير</td>
+                <td>التطوير</td>
+                <td>مهندسة برمجيات</td>
+                <td>$5200</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>عمر</td>
+                <td>الإدارة</td>
+                <td>مدير مشاريع</td>
+                <td>$7500</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>رنا</td>
+                <td>التصميم</td>
+                <td>مصممة جرافيك</td>
+                <td>$4300</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>زياد</td>
+                <td>الهندسة</td>
+                <td>مهندس كهربائي</td>
+                <td>$6100</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>هديل</td>
+                <td>المبيعات</td>
+                <td>مندوبة مبيعات</td>
+                <td>$3600</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>بدر</td>
+                <td>الإدارة</td>
+                <td>مدير تنفيذي</td>
+                <td>$9000</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>سلمى</td>
+                <td>التطوير</td>
+                <td>مطورة تطبيقات</td>
+                <td>$5300</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>فيصل</td>
+                <td>الهندسة</td>
+                <td>مهندس مدني</td>
+                <td>$6200</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>لينا</td>
+                <td>التصميم</td>
+                <td>مصممة داخلية</td>
+                <td>$4700</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">إغلاق</button>
       </div>
     </div>
   </div>
 </div>
-<!-- نهاية Modal -->
+<!-- تهيئة DataTable -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // تهيئة DataTable للجدول داخل الـ Modal
+    let table = new DataTable('#employeeTable');
+  });
+</script>
+
 <!-- نهاية الصفحة -->
 <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
   <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">

@@ -9,70 +9,228 @@
     <title>الجدول الدوري للمهام</title>
 </head>
 <body dir="rtl">
-    <div class="container mt-5">
-        <h2>الجدول الدوري للمهام</h2>
-        <table class="table table-bordered">
-            <thead>
-            <tr>
-                <th>اليوم</th>
-                <th>الوقت</th>
-                <th>المهمة</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td rowspan="2">الأحد</td>
-                <td>9:00 - 11:00</td>
-                <td>اجتماع فريق العمل</td>
-            </tr>
-            <tr>
-                <td>12:00 - 14:00</td>
-                <td>مراجعة التقارير</td>
-            </tr>
-            <tr>
-                <td>الاثنين</td>
-                <td colspan="2">مهام متنوعة</td>
-            </tr>
-            <tr>
-                <td>الثلاثاء</td>
-                <td>10:00 - 12:00</td>
-                <td>تحديث الموقع</td>
-            </tr>
-            </tbody>
-        </table>
-        </div>
-        
-    <div class="modal-body">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
-            <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-9">
-              Level 1: .col-sm-9
-              <div class="row">
-                <div class="col-8 col-sm-6">
-                  Level 2: .col-8 .col-sm-6
-                </div>
-                <div class="col-4 col-sm-6">
-                  Level 2: .col-4 .col-sm-6
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="container mt-5">
+      <h2 class="text-center mb-4">الجدول الدوري للمهام</h2>
+      <table class="table table-bordered text-center">
+          <thead class="table-dark">
+              <tr>
+                  <th>اليوم</th>
+                  <th>الوقت</th>
+                  <th>المهمة</th>
+                  <th>تفاصيل</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- الأحد -->
+              <tr>
+                  <td rowspan="2">الأحد</td>
+                  <td>9:00 - 11:00</td>
+                  <td>اجتماع فريق العمل</td>
+                  <td>
+                      <button class="btn btn-info btn-sm" type="button  background-color: #2e8a23" data-bs-toggle="collapse" data-bs-target="#detailsSunday1" aria-expanded="false" aria-controls="detailsSunday1">
+                          عرض التفاصيل
+                      </button>
+                      <div class="collapse mt-2" id="detailsSunday1">
+                          <div class="card card-body">
+                              الاجتماع سيعقد في قاعة الاجتماعات الرئيسية، وسيتم مناقشة الأهداف الأسبوعية.
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td>12:00 - 14:00</td>
+                  <td>مراجعة التقارير</td>
+                  <td>
+                      <button class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#detailsSunday2" aria-expanded="false" aria-controls="detailsSunday2">
+                          عرض التفاصيل
+                      </button>
+                      <div class="collapse mt-2" id="detailsSunday2">
+                          <div class="card card-body">
+                              سيتم مراجعة تقارير الأداء الشهرية في مكتب المدير التنفيذي.
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <!-- الاثنين -->
+              <tr>
+                  <td rowspan="2">الاثنين</td>
+                  <td>8:00 - 10:00</td>
+                  <td>إعداد خطة العمل الأسبوعية</td>
+                  <td>
+                      <button class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#detailsMonday1" aria-expanded="false" aria-controls="detailsMonday1">
+                          عرض التفاصيل
+                      </button>
+                      <div class="collapse mt-2" id="detailsMonday1">
+                          <div class="card card-body">
+                              سيتم إعداد خطة العمل في مكتب التخطيط بالتعاون مع فريق الإدارة.
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td>13:00 - 15:00</td>
+                  <td>مراجعة أداء المشاريع</td>
+                  <td>
+                      <button class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#detailsMonday2" aria-expanded="false" aria-controls="detailsMonday2">
+                          عرض التفاصيل
+                      </button>
+                      <div class="collapse mt-2" id="detailsMonday2">
+                          <div class="card card-body">
+                              سيتم مراجعة أداء المشاريع في قاعة الاجتماعات مع مديري المشاريع.
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <!-- الثلاثاء -->
+              <tr>
+                  <td rowspan="2">الثلاثاء</td>
+                  <td>10:00 - 12:00</td>
+                  <td>تحديث الموقع</td>
+                  <td>
+                      <button class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#detailsTuesday1" aria-expanded="false" aria-controls="detailsTuesday1">
+                          عرض التفاصيل
+                      </button>
+                      <div class="collapse mt-2" id="detailsTuesday1">
+                          <div class="card card-body">
+                              سيتم تحديث الموقع الإلكتروني وإضافة محتوى جديد.
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td>14:00 - 16:00</td>
+                  <td>جلسة تدريبية</td>
+                  <td>
+                      <button class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#detailsTuesday2" aria-expanded="false" aria-controls="detailsTuesday2">
+                          عرض التفاصيل
+                      </button>
+                      <div class="collapse mt-2" id="detailsTuesday2">
+                          <div class="card card-body">
+                              الجلسة التدريبية ستعقد في قاعة التدريب، وستتناول موضوع تحسين الإنتاجية.
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <!-- الأربعاء -->
+              <tr>
+                  <td rowspan="2">الأربعاء</td>
+                  <td>9:00 - 11:00</td>
+                  <td>اجتماع مع العملاء</td>
+                  <td>
+                      <button class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#detailsWednesday1" aria-expanded="false" aria-controls="detailsWednesday1">
+                          عرض التفاصيل
+                      </button>
+                      <div class="collapse mt-2" id="detailsWednesday1">
+                          <div class="card card-body">
+                              سيتم الاجتماع مع العملاء لمناقشة متطلباتهم وتوقعاتهم.
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td>12:00 - 14:00</td>
+                  <td>إعداد تقارير الأداء</td>
+                  <td>
+                      <button class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#detailsWednesday2" aria-expanded="false" aria-controls="detailsWednesday2">
+                          عرض التفاصيل
+                      </button>
+                      <div class="collapse mt-2" id="detailsWednesday2">
+                          <div class="card card-body">
+                              سيتم إعداد تقارير الأداء الشهرية وتقديمها للإدارة.
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <!-- الخميس -->
+              <tr>
+                  <td rowspan="2">الخميس</td>
+                  <td>8:00 - 10:00</td>
+                  <td>مراجعة الأهداف الشهرية</td>
+                  <td>
+                      <button class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#detailsThursday1" aria-expanded="false" aria-controls="detailsThursday1">
+                          عرض التفاصيل
+                      </button>
+                      <div class="collapse mt-2" id="detailsThursday1">
+                          <div class="card card-body">
+                              سيتم مراجعة الأهداف الشهرية وتحديد الأولويات للأسبوع القادم.
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td>11:00 - 13:00</td>
+                  <td>جلسة عصف ذهني</td>
+                  <td>
+                      <button class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#detailsThursday2" aria-expanded="false" aria-controls="detailsThursday2">
+                          عرض التفاصيل
+                      </button>
+                      <div class="collapse mt-2" id="detailsThursday2">
+                          <div class="card card-body">
+                              جلسة العصف الذهني ستعقد في قاعة الاجتماعات لمناقشة الأفكار الجديدة.
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
 
-      <div class="alert alert-info" role="alert">
-        لديك اجتماع فريق العمل في الساعة 9:00 صباحًا.
-        </div>
+  <!-- تنبيه -->
+  <div class="alert alert-info text-center mt-4" role="alert">
+      لديك اجتماع فريق العمل في الساعة 9:00 صباحًا.
+  </div>
+
+  <!-- Footer -->
+  <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+          <div class="row">
+              <!-- القسم الأول: شعار الشركة -->
+              <div class="col-lg-3 mb-3">
+                  <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
+                      <img src="PIC/image_jpeg.jpg" alt="شعار شركتنا" width="40" height="50">
+                      <span class="fs-5">ALBYADIR</span>
+                  </a>
+                  <ul class="list-unstyled small">
+                      <li class="mb-2">معاً نحو مستقبل أخضر مع البيادر.</li>
+                      <li class="mb-2">"أهلاً بكم في شركة البيادر، شركاء في التنمية المستدامة."</li>
+                      <li class="mb-2 small">© 2023 شركة البيادر | البيادر: شركاء في التنمية المستدامة.</li>
+                  </ul>
+              </div>
+              <!-- القسم الثاني: معلومات الاتصال -->
+              <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                  <h5>معلومات الإتصال بنا</h5>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="https://github.com/BYADIR-IBRAHIM-A">منصتنا على GitHub</a></li>
+                      <li class="mb-2">Users@gmail.com</li>
+                      <li class="mb-2">+96658292704</li>
+                      <li class="mb-2"><a href="contact.html" target="_blank" rel="noopener">للتواصل مع الدعم الفني</a></li>
+                  </ul>
+              </div>
+
+              <!-- القسم الثالث: الشكاوى والاستفسارات -->
+              <div class="col-6 col-lg-2 mb-3">
+                  <h5>للشكاوى والإستفسارات</h5>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="reports.html">أَضغط هنا للإنتقال</a></li>
+                  </ul>
+              </div>
+
+              <!-- القسم الرابع: مواقع التواصل الاجتماعي -->
+              <div class="col-6 col-lg-2 mb-3">
+                  <h5>مواقعنا بالتواصل الإجتماعي</h5>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="https://www.youtube.com/@abdelraoufelmanama7966">منصتنا على YouTube</a></li>
+                      <li class="mb-2"><a href="/docs/5.3/">منصتنا على X</a></li>
+                      <li class="mb-2"><a href="/docs/5.3/examples/">منصتنا على Snapchat</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <!-- صورة النهاية -->
+          <div class="text-center mt-4">
+              <img src="PIC/نهاية.png" alt="صورة النهاية" class="img-fluid" style="max-width: 500px;">
+          </div>
+      </div>
+  </footer>
 </body>
 </html>

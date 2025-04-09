@@ -23,17 +23,14 @@
             data-feedback-opts='{ "endpoint": "https://api.mxis.ch/form/feedback", "id": "codepen", "emailField": true, "title": "Feedback Example", "forceShowButton": true }'>
     </script>
 </head>
-        <span class="fs-5">ALBYADIR</span>
-        الصفحة الرئيسية
 <body dir="rtl">
 
   <!-- Navbar -->
-  <nav class="navbar" style="background-color: #38aa2b;">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container" style="background-color: #38aa2b;">
       <a class="navbar-brand">
         <img src="PIC/image_jpeg.jpg" alt="شعار شركتنا" width="40" height="50">
-        <span class="fs-5">ALBYADIR</span>
-        الصفحة الرئيسية
+        <span class="fs-6">ALBYADIR</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -317,47 +314,79 @@
   });
 </script>
 <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
-    <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
-      <div class="row">
-        <div class="col-lg-3 mb-3">
-          <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
-            <img src="PIC/image_jpeg.jpg" alt="شعار شركتنا" width="40" height="50">
-            <span class="fs-5">ALBYADIR</span>
-          </a>
-          <ul class="list-unstyled small">
-            <li class="mb-2">معاً نحو مستقبل أخضر مع البيادر.</li>
-            <li class="mb-2">"أهلاً بكم في شركة البيادر، شركاء في التنمية المستدامة."</li>
-            <li class="mb-2 small">© 2023 شركة البيادر | البيادر: شركاء في التنمية المستدامة.</li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-          <h5>معلومات الإتصال بنا</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="https://github.com/BYADIR-IBRAHIM-A">منصتنا على GitHub</a></li>
-            <li class="mb-2">Users@gmail.com</li>
-            <li class="mb-2">+96658292704</li>
-            <li class="mb-2"><a href="contact.html" target="_blank" rel="noopener">للتواصل مع الدعم الفني</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-2 mb-3">
-          <h5>للشكاوى والإستفسارات</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="reports.html">أَضغط هنا للإنتقال</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-2 mb-3">
-          <h5>مواقعنا بالتواصل الإجتماعي</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="https://www.youtube.com/@abdelraoufelmanama7966">منصتنا على YouTube</a></li>
-            <li class="mb-2"><a href="/docs/5.3/">منصتنا على X</a></li>
-            <li class="mb-2"><a href="/docs/5.3/examples/">منصتنا على Snapchat</a></li>
-          </ul>
-        </div>
+  <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+    <div class="row">
+      <!-- القسم الأول: شعار الشركة -->
+      <div class="col-lg-3 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
+          <img src="PIC/image_jpeg.jpg" alt="شعار شركتنا" width="40" height="50">
+          <span class="fs-5">ALBYADIR</span>
+        </a>
+        <ul class="list-unstyled small">
+          <li class="mb-2">معاً نحو مستقبل أخضر مع البيادر.</li>
+          <li class="mb-2">"أهلاً بكم في شركة البيادر، شركاء في التنمية المستدامة."</li>
+          <li class="mb-2 small">© 2023 شركة البيادر | البيادر: شركاء في التنمية المستدامة.</li>
+        </ul>
       </div>
-      <div class="text-center mt-4">
-        <img src="PIC/نهاية.png" alt="صورة النهاية" class="img-fluid" style="max-width: 500px;">
+
+      <!-- القسم الثاني: معلومات الاتصال -->
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>معلومات الإتصال بنا</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/BYADIR-IBRAHIM-A" target="_blank">منصتنا على GitHub</a></li>
+          <li class="mb-2">Users@gmail.com</li>
+          <li class="mb-2">+96658292704</li>
+          <li class="mb-2"><a href="contact.html" target="_blank" rel="noopener">للتواصل مع الدعم الفني</a></li>
+        </ul>
+      </div>
+
+      <!-- القسم الثالث: الشكاوى والاستفسارات -->
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>للشكاوى والإستفسارات</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" id="complaint-link">أَضغط هنا للإنتقال</a></li>
+        </ul>
+      </div>
+
+      <!-- القسم الرابع: مواقع التواصل الاجتماعي -->
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>مواقعنا بالتواصل الإجتماعي</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://www.youtube.com/@abdelraoufelmanama7966" target="_blank">منصتنا على YouTube</a></li>
+          <li class="mb-2"><a href="/docs/5.3/" target="_blank">منصتنا على X</a></li>
+          <li class="mb-2"><a href="/docs/5.3/examples/" target="_blank">منصتنا على Snapchat</a></li>
+        </ul>
       </div>
     </div>
+
+    <!-- صورة النهاية -->
+    <div class="text-center mt-4">
+      <img src="PIC/نهاية.png" alt="صورة النهاية" class="img-fluid" style="max-width: 500px;">
+    </div>
+  </div>
 </footer>
+
+<!-- SweetAlert2 Script -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  // تفعيل نافذة التنبيه عند النقر على رابط الشكاوى
+  document.getElementById('complaint-link').addEventListener('click', function (event) {
+    event.preventDefault(); // منع الانتقال الفوري للرابط
+    Swal.fire({
+      title: "هل تريد الاستمرار؟",
+      icon: "question",
+      iconHtml: "؟",
+      confirmButtonText: "نعم",
+      cancelButtonText: "لا",
+      showCancelButton: true,
+      showCloseButton: true
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // الانتقال إلى صفحة الشكاوى إذا تم تأكيد الاختيار
+        window.location.href = "reports.html";
+      }
+    });
+  });
+</script>
 </body>
 </html>
